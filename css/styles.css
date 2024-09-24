@@ -25,7 +25,6 @@ body {
   width: 600px;
   height: 445px;
   border-radius: 12px;
-  padding: 12px 0;
 }
 
 .form .title {
@@ -37,6 +36,8 @@ body {
   line-height: 60.51px;
   text-align: center;
   color: #FF6F00;
+  position: relative;
+  top: -24px;
 }
 
 .form .username_input,
@@ -57,11 +58,28 @@ body {
 .username_input input,
 .password_input input {
   width: 450px;
-  height: 55px;
+  height: 50px;
   text-align: center;
   border: 1px solid #4A148C;
   border-radius: 12px;
   color: #4A148C;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.password_input {
+  position: relative;
+}
+
+.password_input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.password_input i:hover {
+  opacity: 0.8;
 }
 
 .Login_Button {
@@ -74,7 +92,7 @@ body {
   font-size: 25px;
   font-weight: 800;
   line-height: 30.26px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -87,4 +105,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: -20px;
+}
+
+.register a {
+  margin-left: 4px;
 }
