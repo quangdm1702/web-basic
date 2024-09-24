@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HTML5 Boilerplate</title>
-    <link rel="stylesheet" href="../../css/santize.css" />
-    <link rel="stylesheet" href="../../css/theme.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="title">
-        <h1>Login: Final</h1>
-      </div>
-      <div class="content">
-        <div class="form"></div>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../../css/santize.css" />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="page_title">
+      <h1>LOGIN PAGE</h1>
     </div>
-  </body>
+    <div class="content">
+      <form class="form">
+        <h1>LOGIN</h1>
+        <div class="input-box">
+          <label for="user_name">Username</label><br />
+          <input type="text" id="user_name" placeholder="Input username" required>
+        </div>
+        <div class="input-box">
+          <label for="password">Password</label><br />
+          <input type="password" id="password" placeholder="Input password" required>
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <button class="btnLogin" type="submit">
+          LOGIN
+        </button>
+        <div class="register">
+          <p>Don't have account? <a href="#">Register Here</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
