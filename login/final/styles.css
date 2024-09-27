@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   height: 50%;
   border-radius: 12px;
 }
@@ -44,46 +44,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-  margin-top: 8px;
   width: 100%;
+  margin-bottom: 12px;
 }
 
-.input-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+.input-box .wrapper {
+  width: 60%;
 }
 
-.input-wrapper .input-mainWrapper {
-  width: 100%;
+.input-box .wrapper .input-content {
+  position: relative;
 }
 
-.input-wrapper .input-mainWrapper .label {
+.input-box .wrapper label {
   font-size: 14px;
   font-weight: bold;
 }
 
-.input-wrapper .input-mainWrapper input {
+.input-box .wrapper input {
   width: 100%;
   height: 36px;
   border-radius: 8px;
   border: 1px solid #96CEB4;
-  text-align: center;
   outline: none;
+  text-align: center;
 }
 
-.input-mainWrapper .input-content {
-  position: relative;
-}
-
-.input-mainWrapper .input-content input::placeholder {
+.input-box .wrapper input::placeholder {
   font-style: italic;
 }
 
-.input-mainWrapper .input-content i {
+.input-box .wrapper .input-content i {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -91,15 +82,15 @@
   display: none;
 }
 
-.input-mainWrapper .input-content i.active {
-  display: block;
+.input-box .wrapper .input-content i.active {
   color: #ffad60;
-  cursor: pointer;
+  display: block;
 }
 
-.input-mainWrapper .input-content i:hover {
+.input-box .wrapper .input-content i.active:hover {
   opacity: 0.8;
-  transition: all 0.5s;
+  transition: all 0.8s;
+  cursor: pointer;
 }
 
 .login-btn {
