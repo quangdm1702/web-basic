@@ -8,12 +8,13 @@
 }
 
 .LoginPage {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #96CEB4;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
@@ -22,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 36%;
   height: 50%;
   border-radius: 12px;
 }
