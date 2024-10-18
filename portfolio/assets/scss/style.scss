@@ -82,6 +82,7 @@
       }
 
       &__logo {
+        margin-left: 5%;
 
         span {
           font-size: 24px;
@@ -290,7 +291,8 @@
 
 // SECTION 2
 .section-2 {
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 45px;
   background-color: #1f2020;
   display: flex;
   justify-content: center;
@@ -324,7 +326,7 @@
   }
 
   &__intro {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 90%;
 
     p {
@@ -332,6 +334,26 @@
       width: 100%;
       font-weight: bold;
       font-size: 18px;
+    }
+  }
+
+  &__tech {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+    i {
+      width: 20%;
+      color: white;
+      font-size: 32px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 4px;
+      padding: 6px 8px;
     }
   }
 
@@ -369,10 +391,13 @@
   }
 
   &__image {
+    height: 500px;
     width: 45%;
 
     img {
       width: 100%;
+      height: 500px;
+      filter: grayscale(100%);
     }
 
     &--mb {
@@ -381,6 +406,8 @@
   }
 
   @media (max-width: 991.98px) {
+    padding-bottom: 0;
+
     &__container {
       flex-direction: column;
     }
@@ -424,8 +451,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px;
-        height: 400px;
+        width: 95%;
+        height: 200px;
         margin-bottom: 50px;
 
         img {
@@ -433,6 +460,8 @@
           height: 100%;
           border-radius: 12px;
           border-radius: 20px;
+          object-fit: cover;
+          filter: grayscale(100%);
         }
       }
     }
@@ -521,6 +550,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        filter: grayscale(100%);
+
       }
     }
   }
@@ -625,14 +656,15 @@
       &--large,
       &--medium {
         height: 200px;
-        width: 45%;
+        width: 48%;
+        margin-right: 8px;
         margin-bottom: 20px;
-        margin-right: 20px;
 
         img {
           width: 100%;
           border-radius: 16px;
           object-fit: cover;
+          filter: grayscale(100%);
         }
       }
     }
@@ -698,6 +730,7 @@
   padding-top: 70px;
 
   &__container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -720,6 +753,8 @@
       height: 100%;
       width: 49%;
       object-fit: cover;
+      filter: grayscale(100%);
+
 
 
 
@@ -749,7 +784,7 @@
     }
 
     hr {
-      width: 25%;
+      width: 30%;
     }
   }
 
@@ -757,7 +792,7 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   &__order {
@@ -803,6 +838,7 @@
           width: 48%;
           object-fit: cover;
           border-radius: 16px;
+          filter: grayscale(100%);
         }
       }
     }
@@ -872,9 +908,11 @@
   }
 
   &__title {
+    width: 100%;
     margin-bottom: 50px;
 
     p {
+      width: 100%;
       font-size: 70px;
       color: white;
       font-weight: bold;
@@ -889,7 +927,6 @@
   &__about {
     width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
   }
@@ -912,6 +949,7 @@
   }
 
   &__image {
+    height: 200px;
     width: 35%;
     display: flex;
     flex-wrap: wrap;
@@ -923,12 +961,17 @@
     }
 
     img {
+      height: 100%;
       margin-bottom: 10px;
       width: 49%;
+      filter: grayscale(100%);
+      object-fit: cover;
     }
   }
 
   @media (max-width: 991.98px) {
+    padding-top: 0px;
+
     &__container {
       width: 80%;
       display: flex;
@@ -952,6 +995,10 @@
       align-items: center;
 
       p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         font-size: 50px;
       }
     }
@@ -972,6 +1019,7 @@
           margin-bottom: 24px;
           object-fit: cover;
           border-radius: 12px;
+          filter: grayscale(100%);
         }
       }
     }
@@ -1004,7 +1052,7 @@
   justify-content: center;
   align-items: center;
   background-color: #1f2020;
-  padding-top: 50px;
+  padding-top: 98px;
 
   &__container {
     width: 80%;
@@ -1062,6 +1110,7 @@
       width: 100%;
       object-fit: cover;
       border-radius: 12px;
+      filter: grayscale(100%);
     }
   }
 
@@ -1141,6 +1190,12 @@
     &__project {
       width: 80%;
       margin-bottom: 40px;
+    }
+
+    &__image {
+      img {
+        filter: grayscale(100%);
+      }
     }
 
     &__subtitle {
