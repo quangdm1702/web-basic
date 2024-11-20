@@ -1,4 +1,17 @@
 {
-  "demo": "This is Demo for i18next"
+  "demo": "This is Demo for i18next",
+  "toastify": {
+    "messages": {
+      "info": "Đây là nội dung thông báo thông tin",
+      "success": "Đây là nội dung thông báo thành công",
+      "error": "Đây là nội dung thông báo lỗi",
+      "warning": "Đây là nội dung thông báo cảnh báo"
+    },
+    "button": {
+      "info": "Thông báo thông tin",
+      "success": "Thông báo thành công",
+      "error": "Thông báo lỗi",
+      "warning": "Thông báo cảnh báo"
+    }
+  }
 }
-
