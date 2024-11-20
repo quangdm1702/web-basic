@@ -13,5 +13,12 @@
       "error": "Thông báo lỗi",
       "warning": "Thông báo cảnh báo"
     }
+  },
+  "axios": {
+    "demo": {
+      "previous": "Trang trước",
+      "next": "Trang sau",
+      "loading": "Đang tải dữ liệu"
+    }
   }
 }
